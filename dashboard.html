@@ -15,8 +15,19 @@
     </header>
     <main>
       <div class="container">
+
+        <!-- O corpo contém dois botões que são acionados pelos métodos goToCadastroAlunos() e goToBuscaAlunos(),
+          respectivamente, usando o framework Vue.js. -->
+        
+
+  
         <button @click="goToCadastroAlunos">Cadastro de Alunos</button>
         <button @click="goToBuscaAlunos">Busca de Alunos</button>
+
+        
+        <button @click="abc">Cadastro de Professores</button>
+        <button @click="def">Busca de Professores</button>
+
       </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
@@ -24,6 +35,9 @@
 </html>
 
 <script>
+
+// Esse script no final da página cria uma nova instância do Vue, que é associada à seção main da página.
+
   new Vue({
     el: "main",
     methods: {
@@ -33,6 +47,20 @@
       goToBuscaAlunos() {
         window.open("buscaAlunos.html", "_blank");
       },
+      abc() {
+        window.open("cadastroProfs.html", "_blank");
+      },
+      def() {
+        window.open("buscaProfs.html", "_blank");
+      },
+
+
+
+        // Os métodos goToCadastroAlunos() e goToBuscaAlunos() usam o objeto window 
+        // para abrir as páginas de cadastro e busca de alunos em novas
+        // guias do navegador quando os botões são clicados
+
+      },
     },
-  });
+  );
 </script>

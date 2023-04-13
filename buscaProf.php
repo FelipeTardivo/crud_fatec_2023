@@ -2,10 +2,9 @@
 
 
 
-
 header('Access-Control-Allow-Origin: *');
 
-$connect = new PDO("mysql:host=localhost;id20548536_crude_vuejs", "id20548536_user_crudevuejs", "Tomate50!!!123");
+$connect = new PDO("mysql:host=localhost;dbname=id20548536_crude_vuejs", "id20548536_user_crudevuejs", "Tomate50!!!123");
 
 $received_data = json_decode(file_get_contents("php://input"));
 
@@ -23,17 +22,21 @@ $data = array();
 if($received_data->query != '')
 {
 	$query = "
-	SELECT * FROM fatec_alunos 
+	SELECT * FROM fatec_professores 
 	WHERE first_name LIKE '%".$received_data->query."%' 
-	OR last_name LIKE '%".$received_data->query."%' 
-	ORDER BY id DESC
+	OR endereco LIKE '%".$received_data->query."%'
+	OR curso LIKE '%".$received_data->query."%'
+	OR salario LIKE '%".$received_data->query."%' 
+
+
+	ORDER BY salario DESC
 	";
 }
 else
 {
 	$query = "
-	SELECT * FROM fatec_alunos 
-	ORDER BY id DESC
+	SELECT * FROM fatec_professores
+	ORDER BY salario DESC
 	";
 }
 

@@ -5,9 +5,15 @@
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+
+  /* Reset que define valores padrão para as propriedades margin,
+  padding e font-family de todos os elementos HTML, bem como para
+  seus pseudo-elementos :before e :after. */
 }
 
 body {
+
+  /* define estilos para o elemento body */
   margin: 10px;
 }
 
@@ -17,17 +23,26 @@ a {
 
 /* esconde as ancoras da tela */
 a.links {
+
+  /* define estilos para âncoras de links, escondendo-as da tela. */
   display: none;
 }
 
 /* content que contem os formulários */
 .content {
+
+  /* define estilos para o elemento .content, onde se define uma
+   largura de 500px, margem automática e posicionamento relativo. */
+
   width: 500px;
   margin: 0px auto;
   position: relative;
 }
 
-/* formatando o cabeçalho dos formulários */
+/* define estilos para o cabeçalho dos formulários, 
+onde se define o tamanho da fonte, cor, alinhamento e 
+um gradiente linear como linha inferior. */
+
 h1 {
   font-size: 48px;
   color: #066a75;
@@ -61,6 +76,9 @@ h1:after {
   );
 }
 
+/* define estilos para o elemento p, onde se define uma margem inferior de 15px, 
+com exceção do primeiro elemento que não tem margem inferior. */
+
 p {
   margin-bottom: 15px;
 }
@@ -68,12 +86,15 @@ p:first-child {
   margin: 0px;
 }
 label {
+  /* define estilos para o elemento label, onde se define a cor do texto e posicionamento relativo */
+
   color: #405c60;
   position: relative;
 }
 
-/**** advanced input styling ****/
-/* placeholder */
+/* Define estilos avançados para a estilização dos elementos de entrada, 
+como o placeholder, o box-shadow, o border-radius e a transição. */
+
 ::-webkit-input-placeholder {
   color: #bebcbc;
   font-style: italic;
@@ -103,7 +124,9 @@ input:not([type="checkbox"]) {
   transition: all 0.2s linear;
 }
 
-/*estilo do botão submit */
+/*define estilos para o botão de envio, incluindo seu tamanho, cor de fundo, 
+cor do texto, borda e sombra, bem como um efeito de transição quando passa o mouse sobre ele.*/
+
 input[type="submit"] {
   width: 100% !important;
   cursor: pointer;
@@ -124,7 +147,7 @@ input[type="submit"]:hover {
   background: #4ab3c6;
 }
 
-/*marcando os links para mudar de um formulário para outro */
+/*define estilos para um link para mudar de um formulário para outro. */
 .link {
   position: absolute;
   background: #e1eaeb;
@@ -160,7 +183,7 @@ input[type="submit"]:hover {
   border: 1px solid #4ab3c6;
 }
 
-/* estilos para para ambos os formulários */
+/*define estilos para um link para mudar de um formulário para outro. */
 #cadastro,
 #login {
   position: absolute;

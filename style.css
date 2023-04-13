@@ -4,6 +4,8 @@ body {
 }
 
 header {
+	/* Estilização do cabeçalho (header) da página, incluindo uma cor de fundo azul (#007bff), cor branca para o texto e espaçamento interno de 40px. */
+
   background-color: #007bff;
   color: #fff;
   padding: 40px;
@@ -25,6 +27,9 @@ main {
 }
 
 button {
+
+/* Definição de um estilo para os botões, com um espaçamento externo de 10px,
+ borda arredondada, cor de fundo azul (#007bff) e cor branca para o texto. */
   margin: 10px;
   padding: 10px 20px;
   border: none;
@@ -51,6 +56,10 @@ body {
 }
 
 .container {
+	/* Estilização de um contêiner (container) com uma largura fixa de 500px, 
+	margem centralizada na página e preenchimento interno de 20px. 
+	O contêiner tem um fundo branco (#fff), borda arredondada e sombra. */
+
 	width: 500px;
 	margin: 100px auto;
 	padding: 20px;
@@ -74,6 +83,10 @@ label {
 	margin-bottom: 5px;
 }
 
+/* Definição do estilo para campos de entrada de texto (input), 
+incluindo uma largura de 100%, preenchimento interno de 10px, 
+borda de 1px sólida na cor cinza (#ccc) e borda arredondada. */
+
 input[type="email"],
 input[type="password"],
 input[type="text"] {
@@ -85,6 +98,12 @@ input[type="text"] {
 }
 
 input[type="submit"] {
+
+	/* Definição de um estilo para o botão de envio (input[type="submit"]), 
+	com largura de 100%, cor de fundo verde (#4CAF50) e cor branca para o texto. 
+	Quando o cursor passa sobre o botão, a cor de fundo muda para uma tonalidade mais escura (#3e8e41). */
+
+
 	display: block;
 	width: 100%;
 	padding: 10px;
@@ -99,7 +118,9 @@ input[type="submit"]:hover {
 	background-color: #3e8e41;
 }
 
-/* Personalizando o estilo do painel de login */
+/* Personalização do estilo do painel de login e do painel de cadastro, 
+incluindo margem superior, tamanho da fonte para o cabeçalho e espaçamento interno para o corpo */
+
 .login-panel {
   margin-top: 50px;
 }
